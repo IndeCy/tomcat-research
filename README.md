@@ -12,7 +12,7 @@ springboot加载流程
 6.refreshContext 最核心的一步
       1.注册shutdownhook
       2.加载postprocessor
-      3.启动web容器 onRefresh
-      4.生成bean对象 这一步包含很多判断单例的步骤后续再补充
+      3.启动web容器 onRefresh,里面的servlet是通过DispatcherServletAutoConfiguration注入到容器中的。
+      4.生成bean对象 这一步包含很多判断单例的步骤//todo后续再补充
 
 7.最后执行applicationRunner
